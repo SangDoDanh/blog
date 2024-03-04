@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+      integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Viết Blog | Moki</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <p class="wraper-icon"><i class="ri-quill-pen-line logo-icon"></i></p>
+        <span class="website">moki.com</span>
+      </div>
+      <div class="nav">
+        <button class="nav-item">
+          <p><i class="ri-search-line"></i></p>
+        </button>
+        <button class="nav-item noti active">
+          <p><i class="ri-notification-4-line"></i></p>
+        </button>
+        <button class="nav-item setting">
+          <p><i class="ri-equalizer-line"></i></p>
+        </button>
+        <div class="account">
+          <img src="https://i.pravatar.cc/150?img=8" alt="" class="acc-img" />
+          <div class="acc-info">
+            <p class="acc-name">jonh-doe</p>
+            <p class="acc-role"><i class="ri-admin-line"></i> admin</p>
+          </div>
+          <p class="acc-more"><i class="ri-arrow-down-s-fill"></i></p>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div id="app">
+        <div id="title">
+          <input
+            class="title-input"
+            type="text"
+            placeholder="Tiêu đề bài viết ..."
+          />
+        </div>
+        <div id="tool">
+          <ul class="tool-menu">
+            <li class="tool-item">
+              <button class="tool-btn" id="btn-undo" data-type="undo">
+                <i class="ri-arrow-go-back-line"></i>
+              </button>
+            </li>
+            <li class="tool-item">
+              <button class="tool-btn" id="btn-redo" data-type="redo">
+                <i class="ri-arrow-go-forward-line"></i>
+              </button>
+            </li>
+            <li class="tool-item heading">
+              <button class="tool-btn">
+                <i class="ri-font-size-2"></i>
+                <i class="ri-arrow-down-s-fill"></i>
+              </button>
+              <ul class="more-heading">
+                <li class="tool-item">
+                  <button class="tool-btn" data-type="heading-1">
+                    <i class="ri-h-1"></i>
+                  </button>
+                </li>
+                <li class="tool-item">
+                  <button class="tool-btn" data-type="heading-2">
+                    <i class="ri-h-2"></i>
+                  </button>
+                </li>
+                <li class="tool-item">
+                  <button class="tool-btn" data-type="heading-3">
+                    <i class="ri-h-3"></i>
+                  </button>
+                </li>
+                <li class="tool-item">
+                  <button class="tool-btn" data-type="heading-4">
+                    <i class="ri-h-4"></i>
+                  </button>
+                </li>
+                <li class="tool-item">
+                  <button class="tool-btn" data-type="heading-5">
+                    <i class="ri-h-5"></i>
+                  </button>
+                </li>
+                <li class="tool-item">
+                  <button class="tool-btn" data-type="heading-6">
+                    <i class="ri-h-6"></i>
+                  </button>
+                </li>
+              </ul>
+            </li>
+
+            <li class="tool-item">
+              <button class="tool-btn" data-type="bold">
+                <i class="ri-bold"></i>
+              </button>
+            </li>
+            <li class="tool-item">
+              <button class="tool-btn" data-type="italic">
+                <i class="ri-italic"></i>
+              </button>
+            </li>
+            <li class="tool-item">
+              <button class="tool-btn" data-type="underline">
+                <i class="ri-underline"></i>
+              </button>
+            </li>
+            <li class="tool-item">
+              <button class="tool-btn" data-type="through">
+                <i class="ri-strikethrough-2"></i>
+              </button>
+            </li>
+            <li class="tool-item">
+              <button class="tool-btn" data-type="emoji">
+                <i class="ri-emoji-sticker-line"></i>
+              </button>
+            </li>
+
+            <li class="tool-item">
+              <button class="tool-btn" data-type="ul">
+                <i class="ri-list-unordered"></i>
+              </button>
+            </li>
+            <li class="tool-item">
+              <button class="tool-btn" data-type="ol">
+                <i class="ri-list-ordered-2"></i>
+              </button>
+            </li>
+
+            <!-- <li class="tool-item">
+              <button class="tool-btn" data-type="">
+                <i class="fa-solid fa-info"></i>
+              </button>
+            </li>
+            <li class="tool-item">
+              <button class="tool-btn" data-type="">
+                <i class="fa-solid fa-exclamation"></i>
+              </button>
+            </li> -->
+            <li class="tool-item">
+              <button class="tool-btn" data-type="quote">
+                <i class="ri-double-quotes-l"></i>
+              </button>
+            </li>
+            <li class="tool-item">
+              <button class="tool-btn" data-type="code" id="btn-tool-code">
+                <i class="ri-code-line"></i>
+              </button>
+            </li>
+
+            <li class="tool-item">
+              <button
+                class="tool-btn"
+                data-type="block-code"
+                id="btn-tool-code"
+              >
+                <i class="ri-code-s-slash-line"></i>
+              </button>
+            </li>
+            <li class="tool-item p-relative wrapper-tool-table">
+              <button class="tool-btn" data-type="" id="btn-tool-table">
+                <i class="ri-grid-fill"></i>
+              </button>
+              <div class="wrapper-table">
+                <table class="table-select">
+                  <tr>
+                    <td><div class="cell"></div></td>
+                    <td><div class="cell"></div></td>
+                    <td><div class="cell"></div></td>
+                    <td><div class="cell"></div></td>
+                    <td><div class="cell"></div></td>
+                    <td><div class="cell"></div></td>
+                  </tr>
+                  <tr>
+                    <td><div class="cell"></div></td>
+                    <td><div class="cell"></div></td>
+                    <td><div class="cell"></div></td>
+                    <td><div class="cell"></div></td>
+                    <td><div class="cell"></div></td>
+                    <td><div class="cell"></div></td>
+                  </tr>
+                  <tr>
+                    <td><div class="cell"></div></td>
+                    <td><div class="cell"></div></td>
+                    <td><div class="cell"></div></td>
+                    <td><div class="cell"></div></td>
+                    <td><div class="cell"></div></td>
+                    <td><div class="cell"></div></td>
+                  </tr>
+                  <tr>
+                    <td><div class="cell"></div></td>
+                    <td><div class="cell"></div></td>
+                    <td><div class="cell"></div></td>
+                    <td><div class="cell"></div></td>
+                    <td><div class="cell"></div></td>
+                    <td><div class="cell"></div></td>
+                  </tr>
+                </table>
+              </div>
+            </li>
+            <li class="tool-item">
+              <button class="tool-btn" data-type="image">
+                <i class="ri-image-line"></i>
+              </button>
+            </li>
+            <li class="tool-item">
+              <button class="tool-btn" data-type="link">
+                <i class="ri-link"></i>
+              </button>
+            </li>
+            <li class="tool-item">
+              <button class="tool-btn" data-type="">
+                <i class="ri-delete-bin-7-line"></i>
+              </button>
+            </li>
+            <li class="tool-item">
+              <button class="tool-btn" data-type="">
+                <i class="ri-question-mark"></i>
+              </button>
+            </li>
+          </ul>
+          <ul class="tool-menu">
+            <li class="tool-item">
+              <button class="tool-btn launch">
+                <i class="ri-upload-2-line"></i>
+                <p>Xuất bản</p>
+              </button>
+            </li>
+            <li class="tool-item">
+              <button class="tool-btn" data-type="">
+                <i class="ri-save-line"></i>
+              </button>
+            </li>
+            <li class="tool-item">
+              <button class="tool-btn" data-type="">
+                <i class="ri-layout-column-line"></i>
+              </button>
+            </li>
+            <li class="tool-item">
+              <button class="tool-btn" data-type="">
+                <i class="ri-fullscreen-line"></i>
+                <!-- <i class="ri-fullscreen-exit-fill"></i> -->
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div id="editor">
+          <div id="content">
+            <textarea
+              name="input-editor"
+              id="input-editor"
+              placeholder="Nhập nội dung bài viết tại đây ..."
+            ></textarea>
+          </div>
+        </div>
+        <div id="preview"></div>
+      </div>
+    </main>
+    <footer>
+      <p>
+        Bản quyền 2024 thuộc về Moki - <a href="">Điều khoản & chính sách</a>
+      </p>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./main.js"></script>
+    <script type="module" src="./beta.js"></script>
+  </body>
+</html>

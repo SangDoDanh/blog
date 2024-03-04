@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="sidebar-left">
+        <div class="logo">
+          <p><i class="fa-solid fa-hand-peace"></i>blog</p>
+        </div>
+        <div class="menu">
+          <ul class="menu-admin">
+            <li class="admin-item active">
+              <a class="admin-link" href=""
+                ><i class="link-icon fa-solid fa-gauge"></i
+              ></a>
+            </li>
+            <li class="admin-item">
+              <a class="admin-link" href="">
+                <i class="link-icon fa-solid fa-users"></i>
+              </a>
+            </li>
+            <li class="admin-item">
+              <a class="admin-link" href=""
+                ><i class="link-icon fa-regular fa-newspaper"></i
+              ></a>
+            </li>
+            <li class="admin-item">
+              <a class="admin-link" href="">
+                <i class="link-icon fa-solid fa-comments"></i>
+              </a>
+            </li>
+            <li class="admin-item noti">
+              <a class="admin-link" href="">
+                <i class="link-icon fa-solid fa-stamp"></i>
+              </a>
+            </li>
+            <li class="admin-item noti">
+              <a class="admin-link" href="">
+                <i class="fa-solid fa-bell"></i>
+              </a>
+            </li>
+
+            <li class="admin-item">
+              <a class="admin-link" href="">
+                <i class="fa-solid fa-gear"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="show">
+        <div class="show-top">
+          <h1><i class="fa-solid fa-bars"></i> Dash Board</h1>
+          <div class="search">
+            <input
+              class="search"
+              type="text"
+              placeholder="Tìm kiếm bài viết, người dùng ... "
+            />
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+          </div>
+          <div class="account">
+            <img class="acc-img" src="./images/avatar.jpg" alt="" />
+            <div>
+              <p class="acc-name">
+                Mr. Troll <i class="fa-solid fa-caret-down"></i>
+              </p>
+              <p class="acc-role">Role admin</p>
+            </div>
+          </div>
+        </div>
+        <div class="intro">
+          <div class="intro-filter">
+            <button>Tất cả</button>
+            <button class="active">Tuần</button>
+            <button>Tháng</button>
+            <button>Năm</button>
+          </div>
+          <div class="tag-intro intro-user">
+            <i class="fa-solid fa-users"></i>
+            <div class="intro-detail">
+              <p class="intro-value">88+</p>
+              <p class="intro-name">Người dùng</p>
+            </div>
+          </div>
+          <div class="tag-intro intro-blog">
+            <i class="fa-solid fa-comments"></i>
+            <div class="intro-detail">
+              <p class="intro-value">300+</p>
+              <p class="intro-name">Thảo luận</p>
+            </div>
+          </div>
+          <div class="tag-intro intro-blog">
+            <i class="fa-solid fa-newspaper"></i>
+            <div class="intro-detail">
+              <p class="intro-value">100+</p>
+              <p class="intro-name">Bài viết</p>
+            </div>
+          </div>
+          <div class="tag-intro intro-stamp">
+            <i class="fa-solid fa-stamp"></i>
+            <div class="intro-detail">
+              <p class="intro-value">33+</p>
+              <p class="intro-name">Chờ phê duyệt</p>
+            </div>
+          </div>
+          <div class="tag-intro intro-host">
+            <i class="fa-brands fa-square-js"></i>
+            <div class="intro-detail">
+              <p class="intro-value">JS</p>
+              <p class="intro-name">Được quan tâm</p>
+            </div>
+          </div>
+        </div>
+        <div class="table">
+          <div class="table-blog">
+            <div class="table-header">
+              <h2>Bài viết mới <i class="fa-solid fa-chevron-down"></i></h2>
+              <button class="see-all">
+                Xem tất cả <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <th><input type="checkbox" /></th>
+                  <th>#</th>
+                  <th>Tên bài viết</th>
+                  <th>Chủ đề</th>
+                  <th>Trạng thái</th>
+                  <th>Phút đọc</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><input type="checkbox" /></td>
+                  <td>32648</td>
+                  <td class="blog-name">Làm chủ Js từ cơ bản đến nâng cao</td>
+                  <td>Lập trình / JS</td>
+                  <td>
+                    <p class="status delete">
+                      <i class="fa-solid fa-circle-dot"></i>Bị xóa
+                    </p>
+                  </td>
+
+                  <td>5</td>
+                </tr>
+                <tr class="active">
+                  <td><input type="checkbox" /></td>
+                  <td>32648</td>
+                  <td class="blog-name">Làm chủ Js từ cơ bản đến nâng cao</td>
+                  <td>Lập trình / JS</td>
+                  <td>
+                    <p class="status">
+                      <i class="fa-solid fa-circle-dot"></i>Chờ phê duyệt
+                    </p>
+                  </td>
+                  <td>8</td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" /></td>
+                  <td>32648</td>
+                  <td class="blog-name">Làm chủ Js từ cơ bản đến nâng cao</td>
+                  <td>Lập trình / JS</td>
+                  <td>
+                    <p class="status active">
+                      <i class="fa-solid fa-circle-dot"></i>Đã phê duyệt
+                    </p>
+                  </td>
+
+                  <td>9</td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" /></td>
+                  <td>32648</td>
+                  <td class="blog-name">Làm chủ Js từ cơ bản đến nâng cao</td>
+                  <td>Lập trình / JS</td>
+                  <td>
+                    <p class="status">
+                      <i class="fa-solid fa-circle-dot"></i>Chờ phê duyệt
+                    </p>
+                  </td>
+
+                  <td>15</td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" /></td>
+                  <td>32648</td>
+                  <td class="blog-name">Làm chủ Js từ cơ bản đến nâng cao</td>
+                  <td>Lập trình / JS</td>
+                  <td>
+                    <p class="status log">
+                      <i class="fa-solid fa-circle-dot"></i>Bị khóa
+                    </p>
+                  </td>
+
+                  <td>15</td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" /></td>
+                  <td>32648</td>
+                  <td class="blog-name">Làm chủ Js từ cơ bản đến nâng cao</td>
+                  <td>Lập trình / JS</td>
+                  <td>
+                    <p class="status unlock">
+                      <i class="fa-solid fa-circle-dot"></i>Đã mở khóa
+                    </p>
+                  </td>
+
+                  <td>12</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="table-user">
+            <div class="table-header">
+              <h2>Người dùng mới <i class="fa-solid fa-chevron-down"></i></h2>
+              <button class="see-all">
+                Xem tất cả <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+            <div class="user-list">
+              <div class="user-tag new">
+                <img
+                  class="user-img"
+                  src="https://i.pravatar.cc/150?img=3
+"
+                  alt=""
+                />
+                <div class="user-info">
+                  <p class="user-name">Charyl Shawley</p>
+                  <p class="user-comment">
+                    <i class="fa-solid fa-comments"></i> 22+
+                  </p>
+                  <p class="user-blog">
+                    <i class="fa-solid fa-newspaper"></i> 9+
+                  </p>
+                </div>
+              </div>
+              <div class="user-tag">
+                <img
+                  class="user-img"
+                  src="https://i.pravatar.cc/150?img=8
+"
+                  alt=""
+                />
+                <div class="user-info">
+                  <p class="user-name">Charyl Shawley</p>
+                  <p class="user-comment">
+                    <i class="fa-solid fa-comments"></i> 22+
+                  </p>
+                  <p class="user-blog">
+                    <i class="fa-solid fa-newspaper"></i> 9+
+                  </p>
+                </div>
+              </div>
+              <div class="user-tag new">
+                <img
+                  class="user-img"
+                  src="https://i.pravatar.cc/150?img=1
+"
+                  alt=""
+                />
+                <div class="user-info">
+                  <p class="user-name">Rayner Bubb</p>
+                  <p class="user-comment">
+                    <i class="fa-solid fa-comments"></i> 22+
+                  </p>
+                  <p class="user-blog">
+                    <i class="fa-solid fa-newspaper"></i> 9+
+                  </p>
+                </div>
+              </div>
+              <div class="user-tag log">
+                <img
+                  class="user-img"
+                  src="https://i.pravatar.cc/150?img=2
+"
+                  alt=""
+                />
+                <div class="user-info">
+                  <p class="user-name">Tera Skittrell</p>
+                  <p class="user-comment">
+                    <i class="fa-solid fa-comments"></i> 8+
+                  </p>
+                  <p class="user-blog">
+                    <i class="fa-solid fa-newspaper"></i> 3+
+                  </p>
+                </div>
+              </div>
+              <div class="user-tag delete">
+                <img
+                  class="user-img"
+                  src="https://i.pravatar.cc/150?img=4
+"
+                  alt=""
+                />
+                <div class="user-info">
+                  <p class="user-name">Jessica Ricco</p>
+                  <p class="user-comment">
+                    <i class="fa-solid fa-comments"></i> 22+
+                  </p>
+                  <p class="user-blog">
+                    <i class="fa-solid fa-newspaper"></i> 9+
+                  </p>
+                </div>
+              </div>
+              <div class="user-tag">
+                <img
+                  class="user-img"
+                  src="https://i.pravatar.cc/150?img=5
+"
+                  alt=""
+                />
+                <div class="user-info">
+                  <p class="user-name">Esme Angric</p>
+                  <p class="user-comment">
+                    <i class="fa-solid fa-comments"></i> 38+
+                  </p>
+                  <p class="user-blog">
+                    <i class="fa-solid fa-newspaper"></i> 9+
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

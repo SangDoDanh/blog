@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>blog | Chu de nao do</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="common.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <p><i class="logo-icon fa-solid fa-hand-peace"></i>moki.com</p>
+      </div>
+      <div class="nav">
+        <!-- <div class="search">
+          <p class="search-icon">
+            <i class="fa-solid fa-search"></i>
+          </p>
+          <input
+            class="search-input"
+            placeholder="Tìm kiếm trên moki.com"
+            type="text"
+          />
+          <button class="search-btn-exp">Search</button>
+        </div> -->
+        <button class="search-btn"><i class="fa-solid fa-search"></i></button>
+        <button class="noti active">
+          <p><i class="fa-solid fa-bell"></i></p>
+        </button>
+        <button class="setting">
+          <p><i class="fa-solid fa-gear"></i></p>
+        </button>
+        <div class="account">
+          <img src="https://i.pravatar.cc/150?img=8" alt="" class="acc-img" />
+          <div class="acc-info">
+            <p class="acc-name">
+              Jonh Doe<i class="fa-solid fa-chevron-down"></i>
+            </p>
+            <p class="acc-role">@jonh-doe</p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="sidebar-left">
+        <ul class="content-list">
+          <li class="content-item title">
+            <a href="" class="content-link">Chapter</a>
+          </li>
+          <li class="content-item">
+            <a href="" class="content-link">An introduction</a>
+          </li>
+          <li class="content-item title">
+            <a href="" class="content-link">Lesson navigation</a>
+          </li>
+          <li class="content-item">
+            <a href="" class="content-link">What is JavaScript?</a>
+          </li>
+          <li class="content-item">
+            <a href="" class="content-link"
+              >What can in-browser JavaScript do?</a
+            >
+          </li>
+          <li class="content-item">
+            <a href="" class="content-link"
+              >What CAN’T in-browser JavaScript do?</a
+            >
+          </li>
+          <li class="content-item">
+            <a href="" class="content-link">What makes JavaScript unique?</a>
+          </li>
+          <li class="content-item">
+            <a href="" class="content-link">Languages “over” JavaScript</a>
+          </li>
+          <li class="content-item">
+            <a href="" class="content-link">Summary</a>
+          </li>
+          <li class="content-item title">
+            <a href="" class="content-link">Comments (33+)</a>
+          </li>
+          <li class="content-item title">
+            <a href="" class="content-link">Task (5)</a>
+          </li>
+        </ul>
+        <div class="share">
+          <p class="title">Share</p>
+          <p class="social">
+            <i class="facebook fa-brands fa-facebook"></i>
+            <i class="twitter fa-brands fa-twitter"></i>
+            <i class="fa-solid fa-link"></i>
+          </p>
+        </div>
+      </div>
+      <div class="app">
+        <div class="back">
+          <div class="back-action action">
+            <button class="action-item">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+            <button class="action-item"><i class="fa-solid fa-map"></i></button>
+          </div>
+          <p class="navigation-back">
+            <i class="fa-solid fa-chevron-left"></i>
+          </p>
+        </div>
+        <div class="content">
+          <div class="navigation">
+            <ul class="nav">
+              <li class="nav-item">
+                <a href="" class="nav-link home"
+                  ><i class="fa-solid fa-house"></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link right"
+                  ><i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">The JavaScript language</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link right"
+                  ><i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">An introduction </a>
+              </li>
+            </ul>
+            <div class="more">
+              <i class="fa-solid fa-calendar-days"></i>
+              <p>June 19, 2024</p>
+            </div>
+          </div>
+          <div class="content-data">
+            <h1 class="data-heading">An Introduction to JavaScript</h1>
+            <p>
+              Let’s see what’s so special about JavaScript, what we can achieve
+              with it, and what other technologies play well with it.
+            </p>
+            <h2>What is JavaScript?</h2>
+            <p>
+              <i>JavaScript</i> was initially created to
+              <i>“make web pages alive”.</i>
+            </p>
+
+            <p>
+              The programs in this language are called scripts. They can be
+              written right in a web page’s HTML and run automatically as the
+              page loads.
+            </p>
+            <p>
+              Scripts are provided and executed as plain text. They don’t need
+              special preparation or compilation to run.
+            </p>
+            <p>
+              In this aspect, JavaScript is very different from another language
+              called Java.
+            </p>
+            <div class="tag info">
+              <p class="tag-title">
+                <i class="fa-solid fa-circle-info"></i>Why is it called
+                JavaScript?
+              </p>
+              <div class="tag-content">
+                <p>
+                  When JavaScript was created, it initially had another name:
+                  <i>“LiveScript”</i>. But Java was very popular at that time,
+                  so it was decided that positioning a new language as a
+                  <i>“younger brother”</i> of Java would help.
+                </p>
+                <p>
+                  But as it evolved, JavaScript became a fully independent
+                  language with its own specification called
+                  <a href="">ECMAScript</a>, and now it has no relation to Java
+                  at all.
+                </p>
+              </div>
+            </div>
+            <p>
+              Today, JavaScript can execute not only in the browser, but also on
+              the server, or actually on any device that has a special program
+              called the <a href="">JavaScript engine</a>.
+            </p>
+            <p>
+              The browser has an embedded engine sometimes called a
+              <i>“JavaScript virtual machine”</i>.
+            </p>
+            <p>
+              Different engines have different <i>“codenames”</i>. For example:
+            </p>
+            <ul>
+              <li>
+                <p><a href="">V8</a> – in Chrome, Opera and Edge.</p>
+              </li>
+              <li>
+                <a href="">
+                  <p><a href="">SpiderMonkey </a>– in Firefox.</p>
+                </a>
+              </li>
+              <li>
+                <p>
+                  …There are other codenames like <i>“Chakra” </i>for IE,
+                  <i>“JavaScriptCore”</i>, <i>“Nitro”</i> and
+                  <i>“SquirrelFish”</i> for Safari, etc.
+                </p>
+              </li>
+            </ul>
+            <p>
+              The terms above are good to remember because they are used in
+              developer articles on the internet. We’ll use them too. For
+              instance, if <i>“a feature X is supported by V8”</i>, then it
+              probably works in Chrome, Opera and Edge.
+            </p>
+            <div class="tag info">
+              <p class="tag-title">
+                <i class="fa-solid fa-circle-info"></i>How do engines work?
+              </p>
+              <div class="tag-content">
+                <p>Engines are complicated. But the basics are easy.</p>
+                <ol>
+                  <li>
+                    <p>
+                      The engine (embedded if it’s a browser) reads
+                      (<i>“parses”</i>) the script.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Then it converts (<i>“compiles”</i>) the script to machine
+                      code.
+                    </p>
+                  </li>
+                  <li><p>And then the machine code runs, pretty fast.</p></li>
+                </ol>
+                <p>
+                  The engine applies optimizations at each step of the process.
+                  It even watches the compiled script as it runs, analyzes the
+                  data that flows through it, and further optimizes the machine
+                  code based on that knowledge.
+                </p>
+              </div>
+            </div>
+            <h2>What can in-browser JavaScript do?</h2>
+            <p>
+              Modern JavaScript is a “safe” programming language. It does not
+              provide low-level access to memory or the CPU, because it was
+              initially created for browsers which do not require it.
+            </p>
+            <p>
+              JavaScript’s capabilities greatly depend on the environment it’s
+              running in. For instance, Node.js supports functions that allow
+              JavaScript to read/write arbitrary files, perform network
+              requests, etc.
+            </p>
+            <p>
+              In-browser JavaScript can do everything related to webpage
+              manipulation, interaction with the user, and the webserver.
+            </p>
+            <p>For instance, in-browser JavaScript is able to:</p>
+            <ul>
+              <li>
+                <p>
+                  Add new HTML to the page, change the existing content, modify
+                  styles.
+                </p>
+              </li>
+              <li>
+                <p>
+                  React to user actions, run on mouse clicks, pointer movements,
+                  key presses.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Send requests over the network to remote servers, download and
+                  upload files (so-called <a href="">AJAX</a> and
+                  <a href="">COMET</a> technologies).
+                </p>
+              </li>
+              <li>
+                <p>
+                  Get and set cookies, ask questions to the visitor, show
+                  messages.
+                </p>
+              </li>
+              <li>
+                <p>Remember the data on the client-side (“local storage”).</p>
+              </li>
+            </ul>
+            <h2>What CAN’T in-browser JavaScript do?</h2>
+            <p>
+              JavaScript’s abilities in the browser are limited to protect the
+              user’s safety. The aim is to prevent an evil webpage from
+              accessing private information or harming the user’s data.
+            </p>
+            <p>Examples of such restrictions include:</p>
+            <ul>
+              <li>
+                <p>
+                  JavaScript on a webpage may not read/write arbitrary files on
+                  the hard disk, copy them or execute programs. It has no direct
+                  access to OS functions.
+                </p>
+                <p>
+                  Modern browsers allow it to work with files, but the access is
+                  limited and only provided if the user does certain actions,
+                  like “dropping” a file into a browser window or selecting it
+                  via an <span class="tag-html">&lt;input&gt;</span> tag.
+                </p>
+                <p>
+                  There are ways to interact with the camera/microphone and
+                  other devices, but they require a user’s explicit permission.
+                  So a JavaScript-enabled page may not sneakily enable a
+                  web-camera, observe the surroundings and send the information
+                  to the <a href="">NSA</a>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Different tabs/windows generally do not know about each other.
+                  Sometimes they do, for example when one window uses JavaScript
+                  to open the other one. But even in this case, JavaScript from
+                  one page may not access the other page if they come from
+                  different sites (from a different domain, protocol or port).
+                </p>
+                <p>
+                  This is called the <i>“Same Origin Policy”</i>. To work around
+                  that, both pages must agree for data exchange and must contain
+                  special JavaScript code that handles it. We’ll cover that in
+                  the tutorial.
+                </p>
+                <p>
+                  This limitation is, again, for the user’s safety. A page from
+                  <span class="tag-html">http://anysite.com</span> which a user
+                  has opened must not be able to access another browser tab with
+                  the URL <span class="tag-html">http://gmail.com</span>, for
+                  example, and steal information from there.
+                </p>
+              </li>
+              <li>
+                <p>
+                  JavaScript can easily communicate over the net to the server
+                  where the current page came from. But its ability to receive
+                  data from other sites/domains is crippled. Though possible, it
+                  requires explicit agreement (expressed in HTTP headers) from
+                  the remote side. Once again, that’s a safety limitation.
+                </p>
+              </li>
+            </ul>
+            <img
+              src="https://raw.githubusercontent.com/javascript-tutorial/vi.javascript.info/609db2bc1a4704e4ebb4d411997b831eaa6e55db/1-js/01-getting-started/1-intro/limitations.svg"
+              alt=""
+            />
+            <p>
+              Such limitations do not exist if JavaScript is used outside of the
+              browser, for example on a server. Modern browsers also allow
+              plugins/extensions which may ask for extended permissions.
+            </p>
+            <h2>What makes JavaScript unique?</h2>
+            <p>There are at least three great things about JavaScript:</p>
+            <div class="box">
+              <ul>
+                <li>
+                  <p>Full integration with HTML/CSS.</p>
+                </li>
+                <li>
+                  <p>Simple things are done simply.</p>
+                </li>
+                <li>
+                  <p>Supported by all major browsers and enabled by default.</p>
+                </li>
+              </ul>
+            </div>
+            <p>
+              JavaScript is the only browser technology that combines these
+              three things.
+            </p>
+            <p>
+              JavaScript is the only browser technology that combines these
+              three things.
+            </p>
+            <p>
+              That’s what makes JavaScript unique. That’s why it’s the most
+              widespread tool for creating browser interfaces.
+            </p>
+            <h2>Languages “over” JavaScript</h2>
+            <p>
+              The syntax of JavaScript does not suit everyone’s needs. Different
+              people want different features.
+            </p>
+            <p>
+              That’s to be expected, because projects and requirements are
+              different for everyone.
+            </p>
+            <p>
+              So, recently a plethora of new languages appeared, which are
+              transpiled (converted) to JavaScript before they run in the
+              browser.
+            </p>
+            <p>
+              Modern tools make the transpilation very fast and transparent,
+              actually allowing developers to code in another language and
+              auto-converting it “under the hood”.
+            </p>
+            <p>Examples of such languages:</p>
+            <ul>
+              <li>
+                <p>
+                  <a href="">CoffeeScript</a> is “syntactic sugar” for
+                  JavaScript. It introduces shorter syntax, allowing us to write
+                  clearer and more precise code. Usually, Ruby devs like it.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <a href="">TypeScript</a> is concentrated on adding “strict
+                  data typing” to simplify the development and support of
+                  complex systems. It is developed by Microsoft.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <a href="">Flow</a> also adds data typing, but in a different
+                  way. Developed by Facebook.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <a href="">Dart</a> is a standalone language that has its own
+                  engine that runs in non-browser environments (like mobile
+                  apps), but also can be transpiled to JavaScript. Developed by
+                  Google.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <a href="">Brython</a> is a Python transpiler to JavaScript
+                  that enables the writing of applications in pure Python
+                  without JavaScript.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <a href="">Kotlin</a> is a modern, concise and safe
+                  programming language that can target the browser or Node.
+                </p>
+              </li>
+            </ul>
+            <p>
+              There are more. Of course, even if we use one of these transpiled
+              languages, we should also know JavaScript to really understand
+              what we’re doing.
+            </p>
+            <h2>Summary</h2>
+            <ul>
+              <li>
+                <p>
+                  JavaScript was initially created as a browser-only language,
+                  but it is now used in many other environments as well.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Today, JavaScript has a unique position as the most
+                  widely-adopted browser language, fully integrated with
+                  HTML/CSS.
+                </p>
+              </li>
+              <li>
+                <p>
+                  There are many languages that get “transpiled” to JavaScript
+                  and provide certain features. It is recommended to take a look
+                  at them, at least briefly, after mastering JavaScript.
+                </p>
+              </li>
+            </ul>
+            <h2><i class="fa-solid fa-comments"></i> Comments ...</h2>
+          </div>
+        </div>
+        <div class="next">
+          <div class="next-action">
+            <button class="action-item">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+            </button>
+            <button class="action-item">
+              <i class="fa-solid fa-file-pen"></i>
+            </button>
+          </div>
+          <p class="navigation-next">
+            <i class="fa-solid fa-chevron-right"></i>
+          </p>
+        </div>
+        <footer>
+          <p class="footer">
+            © 2024 Moki Tech | <a href="">Điều khoản & chính sách</a>
+          </p>
+        </footer>
+      </div>
+    </main>
+  </body>
+</html>

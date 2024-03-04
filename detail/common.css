@@ -1,0 +1,23 @@
+.tag {
+  padding: 12px;
+  margin: 12px 0;
+}
+
+.tag-title {
+  display: flex;
+  font-weight: 600;
+}
+
+.tag-title i {
+  margin-right: 12px;
+  font-size: 2rem;
+}
+
+.tag-content {
+  padding-left: 3.2rem;
+}
+
+.tag.info .tag-title i {
+  font-size: 2rem;
+  color: #4b94be;
+}

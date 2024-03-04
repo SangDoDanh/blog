@@ -1,0 +1,21 @@
+.btn {
+  min-width: 160px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  background-color: white;
+  font-size: 1.8rem;
+}
+
+.btn.btn-main {
+  color: #c06334;
+  border: 1px solid #c06334;
+}
+
+.btn.btn-dic {
+  border-radius: 999px;
+}
+
+.w-100 {
+  width: 100%;
+}
+
