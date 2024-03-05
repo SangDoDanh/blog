@@ -1,11 +1,5 @@
 import emojisData from "./data/emojis-data.js";
 import { categoriesData } from "./data/emojis-data.js";
-import {
-  editorElement,
-  previewElement,
-  insertContent,
-  triggerEvent,
-} from "./beta.js";
 
 const show = document.getElementById("show-emoji");
 const categoriesEmoji = document.getElementById("nav-emoji");
@@ -67,48 +61,6 @@ function removeClass(nodeList, classRemove) {
 // them su kien cho button emojj
 emojisElement.forEach((emojiBtn) => {
   emojiBtn.addEventListener("click", () => {
-    let positionStart = editorElement.selectionStart;
-    const positionEnd = editorElement.selectionEnd;
-    const valueEmoji = `${emojiBtn.getAttribute("data-emoji")} `;
-    const content = editorElement.value;
-    editorElement.value = insertContent(
-      valueEmoji,
-      positionStart,
-      content,
-      positionEnd
-    );
-    editorElement.setSelectionRange(
-      positionStart + valueEmoji.length,
-      positionStart + valueEmoji.length
-    );
-    editorElement.focus();
-    triggerEvent("input", editorElement);
+    console.log(emojiBtn.getAttribute("data-emoji"));
   });
 });
-
-const wrapperEmojis = document.getElementById("wraper-emojis");
-
-const emojiButton = document.getElementById("emojis-btn");
-
-emojiButton.addEventListener("click", () => {
-  editorElement.focus();
-  editorElement.setSelectionRange(
-    editorElement.selectionStart,
-    editorElement.selectionEnd
-  );
-  wrapperEmojis.classList.toggle("d-none");
-  emojiButton.classList.toggle("active");
-});
-closeBox(wrapperEmojis, [emojiButton]);
-
-// Đóng hộp thoại emojis khi nhấp chuột ra ngoài
-function closeBox(boxElement, ignores) {
-  document.body.addEventListener("click", function (event) {
-    if (
-      !boxElement.contains(event.target) &&
-      ignores.indexOf(event.target) != -1
-    ) {
-      wrapperEmojis.classList.add("d-none");
-    }
-  });
-}

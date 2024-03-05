@@ -1,4 +1,6 @@
 import VersionContent from "./version_content.js";
+
+export { editorElement, previewElement, insertContent, triggerEvent };
 const editorElement = document.getElementById("input-editor");
 let currentPositionEditor = 0;
 const previewElement = document.getElementById("preview");
@@ -25,6 +27,7 @@ const insTag = {
   renderer(token) {
     return `<ins>${token.content}</ins>`;
   },
+  childTokens: ["em", "strong"],
 };
 
 marked.use({ extensions: [insTag] });
@@ -42,6 +45,14 @@ function handlerKeyUpEnterForList(e) {
       const firstValue = content.slice(0, currentPosition);
       const lastValue = content.slice(currentPosition);
       this.value = `${firstValue}* ${lastValue}`;
+      this.setSelectionRange(currentPosition + 2, currentPosition + 2);
+    }
+
+    if (lineCurrent.startsWith("> ")) {
+      console.log("zo day");
+      const firstValue = content.slice(0, currentPosition);
+      const lastValue = content.slice(currentPosition);
+      this.value = `${firstValue}> ${lastValue}`;
       this.setSelectionRange(currentPosition + 2, currentPosition + 2);
     }
     // Handles the enter key press with ordered list
@@ -404,13 +415,20 @@ function triggerEvent(eventName, element) {
   element.dispatchEvent(newEvent);
 }
 
-function insertContent(value, position, content) {
-  if (value.length == 0) {
+function insertContent(valueAdd, start, content, end) {
+  if (valueAdd.length == 0) {
     return content;
   }
-  const previousvalue = content.slice(0, position);
-  const backValue = content.slice(position);
-  return `${previousvalue}${value}${backValue}`;
+  if (!end || end < start) {
+    end = start;
+  }
+  const regexNumber = /\d+/;
+  if (!regexNumber.test(start) || !regexNumber.test(end)) {
+    return value;
+  }
+  const leftValue = content.slice(0, start);
+  const rightValue = content.slice(end);
+  return `${leftValue}${valueAdd}${rightValue}`;
 }
 
 function removeContent(start, end, content) {

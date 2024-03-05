@@ -332,7 +332,8 @@ main {
   left: 12px;
 }
 
-.tool-btn:hover {
+.tool-btn:hover,
+.tool-btn.active {
   background-color: rgb(247, 74, 74);
   color: white;
 }

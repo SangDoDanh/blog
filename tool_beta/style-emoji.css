@@ -4,9 +4,17 @@
   box-sizing: border-box;
 }
 
+.menu-item {
+  position: relative;
+}
+
+.menu-sub {
+  position: absolute;
+  top: calc(100% + 7px);
+  left: 0;
+}
+
 #show-emoji {
-  margin: 0 auto;
-  margin-top: 40px;
   display: flex;
   flex-wrap: wrap;
   gap: 4px;

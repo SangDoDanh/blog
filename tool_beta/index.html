@@ -11,6 +11,7 @@
       referrerpolicy="no-referrer"
     />
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <link rel="stylesheet" href="style-emoji.css" />
     <link rel="stylesheet" href="style.css" />
     <title>Viết Blog | Moki</title>
   </head>
@@ -120,10 +121,19 @@
                 <i class="ri-strikethrough-2"></i>
               </button>
             </li>
-            <li class="tool-item">
-              <button class="tool-btn" data-type="emoji">
+            <li class="tool-item menu-item">
+              <button class="tool-btn" id="emojis-btn" data-type="emoji">
                 <i class="ri-emoji-sticker-line"></i>
               </button>
+              <div class="wraper-emojis menu-sub d-noness" id="wraper-emojis">
+                <div id="show-emoji">
+                  <ul id="nav-emoji"></ul>
+                  <div class="search-emoji">
+                    <input type="text" placeholder="Tìm kiếm emojis ..." />
+                    <button><i class="ri-search-2-line"></i></button>
+                  </div>
+                </div>
+              </div>
             </li>
 
             <li class="tool-item">
@@ -271,14 +281,8 @@
         Bản quyền 2024 thuộc về Moki - <a href="">Điều khoản & chính sách</a>
       </p>
     </footer>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
+
+    <script type="module" src="./emoji.js"></script>
     <script src="./main.js"></script>
     <script type="module" src="./beta.js"></script>
   </body>
