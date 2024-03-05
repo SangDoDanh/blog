@@ -17,23 +17,41 @@
 #show-emoji {
   display: flex;
   flex-wrap: wrap;
-  gap: 4px;
   width: 350px;
   position: relative;
+  gap: 4px;
+  padding: 4px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 6px;
 }
 
+.search-emoji {
+  display: flex;
+  width: 100%;
+}
+
+.search-emoji .input-search {
+  flex: 1;
+  padding-left: 8px;
+  font-size: 1.4rem;
+  font-family: 'Courier New', Courier, monospace;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #e8ebed;
+  height: 32px;
+}
+
 #nav-emoji {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   list-style: none;
   align-items: center;
-  padding: 4px;
+  padding: 3px 4px 0 4px;
   gap: 4px;
-  background-color: #eee;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
-    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  background-color: #e8ebed;
+  border-radius: 4px 4px 0 0;
+  /* border-bottom: 1px solid #ddd; */
 }
 
 #show-emoji .category {
@@ -41,7 +59,7 @@
   display: none;
   flex-wrap: wrap;
   gap: 8px;
-  padding: 4px;
+  /* background-color: #e8ebed; */
 }
 
 #show-emoji .category.active {
@@ -56,39 +74,59 @@
   justify-content: space-evenly;
   gap: 4px;
   background-color: white;
-  height: 450px;
+  max-height: 300px;
   overflow-y: scroll;
   scrollbar-color: #ccc transparent;
   scrollbar-width: thin;
+}
+
+.emojis .message {
+  font-size: 1.4rem;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .emoji,
 #nav-emoji li {
   width: 38px;
   height: 38px;
-  font-size: 22px;
+  font-size: 24px;
   border-radius: 50%;
   border: none;
   cursor: pointer;
-  background-color: #eee;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-#nav-emoji .emoji-item {
-  font-size: 20px;
-  width: 32px;
-  height: 32px;
-  border-radius: 4px;
   background-color: transparent;
 }
 
+#nav-emoji .emoji-item {
+  width: 28px;
+  height: 28px;
+  border-radius: 4px 4px 0 0;
+  background-color: transparent;
+}
+
+.emoji-item  .btn-emoji {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  height: 100%;
+  font-size: 18px;
+  outline: none;
+  border-radius: 4px 4px 0 0;
+  cursor: pointer;
+}
+
+.emoji-item  .btn-emoji.active {
+  background-color: white;
+}
+
 #nav-emoji .emoji-item.active {
-  background-color: #ddd;
+  background-color: white;
 }
 
 .emoji:hover,
 #nav-emoji .emoji-item:hover {
   background-color: #ddd;
 }
+

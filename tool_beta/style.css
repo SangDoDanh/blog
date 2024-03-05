@@ -340,7 +340,6 @@ main {
 .tool-btn {
   min-width: 32px;
   min-height: 20px;
-  padding: 0 8px;
   height: 32px;
   cursor: pointer;
   border: none;

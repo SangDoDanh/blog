@@ -22335,6 +22335,7 @@ export default [
 export const categoriesData = [
   {
     slug: "smileys-emotion",
+    character: "😀",
     subCategories: [
       "face-smiling",
       "face-affection",
@@ -22356,6 +22357,7 @@ export const categoriesData = [
   },
   {
     slug: "people-body",
+    character: "👋",
     subCategories: [
       "hand-fingers-open",
       "hand-fingers-partial",
@@ -22376,11 +22378,8 @@ export const categoriesData = [
     ],
   },
   {
-    slug: "component",
-    subCategories: ["skin-tone", "hair-style"],
-  },
-  {
     slug: "animals-nature",
+    character: "🐵",
     subCategories: [
       "animal-mammal",
       "animal-bird",
@@ -22394,6 +22393,7 @@ export const categoriesData = [
   },
   {
     slug: "food-drink",
+    character: "🍇",
     subCategories: [
       "food-fruit",
       "food-vegetable",
@@ -22407,6 +22407,7 @@ export const categoriesData = [
   },
   {
     slug: "travel-places",
+    character: "🌍",
     subCategories: [
       "place-map",
       "place-geographic",
@@ -22423,10 +22424,12 @@ export const categoriesData = [
   },
   {
     slug: "activities",
+    character: "🎃",
     subCategories: ["event", "award-medal", "sport", "game", "arts-crafts"],
   },
   {
     slug: "objects",
+    character: "👓",
     subCategories: [
       "clothing",
       "sound",
@@ -22450,6 +22453,7 @@ export const categoriesData = [
   },
   {
     slug: "symbols",
+    character: "🏧",
     subCategories: [
       "transport-sign",
       "warning",
@@ -22469,6 +22473,7 @@ export const categoriesData = [
   },
   {
     slug: "flags",
+    character: "🏁",
     subCategories: ["flag", "country-flag", "subdivision-flag"],
   },
 ];

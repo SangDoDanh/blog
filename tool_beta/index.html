@@ -125,12 +125,19 @@
               <button class="tool-btn" id="emojis-btn" data-type="emoji">
                 <i class="ri-emoji-sticker-line"></i>
               </button>
-              <div class="wraper-emojis menu-sub d-noness" id="wraper-emojis">
+              <div class="wraper-emojis menu-sub d-none" id="wraper-emojis">
                 <div id="show-emoji">
-                  <ul id="nav-emoji"></ul>
                   <div class="search-emoji">
-                    <input type="text" placeholder="Tìm kiếm emojis ..." />
-                    <button><i class="ri-search-2-line"></i></button>
+                    <input
+                      class="input-search"
+                      id="input-search-emoji"
+                      type="text"
+                      placeholder="Tìm kiếm emojis ..."
+                    />
+                  </div>
+                  <ul id="nav-emoji"></ul>
+                  <div class="category active">
+                    <div class="emojis" id="emojis"></div>
                   </div>
                 </div>
               </div>
