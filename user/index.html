@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+      integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="blog.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Ueser</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <p class="wraper-icon"><i class="ri-quill-pen-line logo-icon"></i></p>
+        <span class="website">moki.com</span>
+      </div>
+      <div class="nav">
+        <button class="nav-item">
+          <p><i class="ri-search-line"></i></p>
+        </button>
+        <button class="nav-item noti active">
+          <p><i class="ri-notification-4-line"></i></p>
+        </button>
+        <button class="nav-item setting">
+          <p><i class="ri-equalizer-line"></i></p>
+        </button>
+        <div class="account">
+          <img src="https://i.pravatar.cc/150?img=8" alt="" class="acc-img" />
+          <div class="acc-info">
+            <p class="acc-name">jonh-doe</p>
+            <p class="acc-role"><i class="ri-admin-line"></i> admin</p>
+          </div>
+          <p class="acc-more"><i class="ri-arrow-down-s-fill"></i></p>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="sidebar-left">
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a src="#" class="nav-link">
+              <i class="ri-dashboard-line"></i>
+              <!-- Dashboard -->
+            </a>
+            <p class="nav-title">Dashboard</p>
+          </li>
+          <li class="nav-item">
+            <a src="#" class="nav-link active">
+              <i class="ri-user-line"></i>
+              <!--  của tôi -->
+            </a>
+            <p class="nav-title active">Profile</p>
+          </li>
+          <li class="nav-item">
+            <a src="#" class="nav-link">
+              <i class="ri-file-list-3-line"></i>
+              <!--  của tôi -->
+            </a>
+            <p class="nav-title">Bài viết</p>
+          </li>
+          <li class="nav-item">
+            <a src="#" class="nav-link">
+              <i class="ri-play-list-2-line"></i>
+              <!--  của tôi -->
+            </a>
+            <p class="nav-title">Danh sách</p>
+          </li>
+          <li class="nav-item">
+            <a src="#" class="nav-link">
+              <i class="ri-notification-line"></i>
+              <!-- Thông báo -->
+            </a>
+            <p class="nav-title">Thông báo</p>
+          </li>
+          <li class="nav-item">
+            <a src="#" class="nav-link">
+              <i class="ri-history-line"></i>
+            </a>
+            <p class="nav-title">Lịch sử</p>
+          </li>
+          <li class="nav-item">
+            <a src="#" class="nav-link">
+              <i class="ri-equalizer-line"></i>
+              <!-- Cài đặt -->
+            </a>
+            <p class="nav-title">Cài đặt</p>
+          </li>
+        </ul>
+      </div>
+      <div class="app">
+        <div class="background">
+          <div class="desc">
+            <h2 class="sayhi">Hi! Jonh Doe</h2>
+            <p class="slogan">
+              <i class="ri-double-quotes-l"></i> Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Adipisci blanditiis, minima ratione
+              iste atque, ipsa, est illo eos aliquid enim consectetur. Pariatur
+              incidunt unde velit blanditiis eius consectetur accusantium
+              quibusdam <i class="ri-double-quotes-r"></i>
+            </p>
+          </div>
+          <div class="bg-action">
+            <button class="btn-bgaction"><i class="ri-camera-line"></i></button>
+            <button class="btn-bgaction">
+              <i class="ri-share-forward-line"></i>
+            </button>
+          </div>
+        </div>
+        <div class="wraper-profile">
+          <div class="user-profile">
+            <form action="" class="profile-form">
+              <div class="fieldset">
+                <p class="fieldset-title">Thông tin cơ bản</p>
+                <div class="fieldset-actions">
+                  <button class="btn-action">
+                    <i class="ri-edit-2-line"></i>
+                  </button>
+                  <!-- <button><i class="ri-check-line"></i></button> -->
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="user-name">User name</label>
+                <input
+                  class="form-input"
+                  type="text"
+                  id="user-name"
+                  value="moki_95"
+                />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="user-email">Email</label>
+                <input
+                  class="form-input"
+                  type="text"
+                  id="user-email"
+                  value="jonhdoe@example.com"
+                />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="user-phone">Số điện thoại</label>
+                <input
+                  class="form-input"
+                  type="text"
+                  id="user-phone"
+                  value="0989-6868-68"
+                />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="user-first-name"
+                  >First name</label
+                >
+                <input
+                  class="form-input"
+                  type="text"
+                  id="user-first-name"
+                  value="Jonh"
+                />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="user-last-name">Last name</label>
+                <input
+                  class="form-input"
+                  type="text"
+                  id="user-last-name"
+                  value="Doe"
+                />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="user-birthday">Ngày sinh</label>
+                <input
+                  class="form-input"
+                  type="text"
+                  id="user-birthday"
+                  value="1999, Mark 26"
+                />
+              </div>
+            </form>
+          </div>
+          <div class="user-account">
+            <div class="user-avatar">
+              <div class="wrapper-user-info">
+                <p class="user-name"><i class="ri-at-line"></i>michel_Scofil</p>
+              </div>
+              <div class="wraper-avatar">
+                <img
+                  class="avarta-img"
+                  src="https://i.pravatar.cc/150?img=5"
+                  alt=""
+                />
+              </div>
+              <div class="wrapper-user-info">
+                <button class="btn-follow">
+                  Đã theo dõi <i class="ri-checkbox-circle-line"></i>
+                </button>
+              </div>
+            </div>
+            <div>
+              <p><i class="ri-youtube-line"></i></p>
+              <p><i class="ri-twitter-line"></i></p>
+            </div>
+          </div>
+
+          <div class="wrapper-my-blog">
+            <div class="fieldset">
+              <p class="fieldset-title">Danh Sách bài viết</p>
+              <div class="fieldset-actions">
+                <button class="btn-action">
+                  <i class="ri-logout-circle-r-line"></i>
+                </button>
+                <!-- <button><i class="ri-check-line"></i></button> -->
+              </div>
+            </div>
+            <div class="list-blog">
+              <div class="blog-host">
+                <div class="blog-item list">
+                  <div class="blog-img">
+                    <img src="https://picsum.photos/id/69/360/200" alt="" />
+                    <p class="blog-multi">
+                      <i class="ri-play-list-2-line"></i>
+                    </p>
+                  </div>
+                  <div class="blog-info">
+                    <div class="blog-author">
+                      <img
+                        class="author-avatar"
+                        src="https://i.pravatar.cc/150?img=5"
+                        alt=""
+                      />
+                    </div>
+                    <div class="blog-title">
+                      <h2>Promises, async/await</h2>
+                      <span class="subject">
+                        <i class="ri-hashtag"></i>javaScript
+                      </span>
+                      <span class="subject">
+                        <i class="ri-hashtag"></i>asynchronous
+                      </span>
+                    </div>
+                    <div class="blog-detail">
+                      <p class="blog-time">
+                        <i class="ri-time-line"></i><sup> 5</sup>
+                      </p>
+                      <p class="bog-comment">
+                        <i class="ri-chat-3-line"></i><sup> 33</sup>
+                      </p>
+                    </div>
+                    <div class="blog-more">
+                      <p class="author-name">
+                        @michel_Scofil <i class="ri-checkbox-circle-line"></i>
+                      </p>
+                      <p class="blog-date">June 19, 2024</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="fieldset">
+              <p class="fieldset-title">Bài viết gần đây</p>
+              <div class="fieldset-actions">
+                <button class="btn-action">
+                  <i class="ri-logout-circle-r-line"></i>
+                </button>
+                <!-- <button><i class="ri-check-line"></i></button> -->
+              </div>
+            </div>
+            <div class="blog-host">
+              <div class="blog-item">
+                <div class="blog-img">
+                  <img src="https://picsum.photos/id/67/360/200" alt="" />
+                </div>
+                <div class="blog-info">
+                  <div class="blog-author">
+                    <img
+                      class="author-avatar"
+                      src="https://i.pravatar.cc/150?img=9"
+                      alt=""
+                    />
+                  </div>
+                  <div class="blog-title">
+                    <h2>Advanced working with functions</h2>
+                    <span class="subject">
+                      <i class="ri-hashtag"></i>JavaScript
+                    </span>
+                    <span class="subject">
+                      <i class="ri-hashtag"></i>function
+                    </span>
+                  </div>
+                  <div class="blog-detail">
+                    <p class="blog-time">
+                      <i class="ri-time-line"></i><sup> 7</sup>
+                    </p>
+                    <p class="bog-comment">
+                      <i class="ri-chat-3-line"></i><sup> 18</sup>
+                    </p>
+                  </div>
+                  <div class="blog-more">
+                    <p class="author-name">
+                      @michel_Scofil <i class="ri-checkbox-circle-line"></i>
+                    </p>
+                    <p class="blog-date">June 19, 2024</p>
+                  </div>
+                </div>
+              </div>
+              <div class="blog-item">
+                <div class="blog-img">
+                  <img src="https://picsum.photos/id/68/360/200" alt="" />
+                </div>
+                <div class="blog-info">
+                  <div class="blog-author">
+                    <img
+                      class="author-avatar"
+                      src="https://i.pravatar.cc/150?img=3"
+                      alt=""
+                    />
+                  </div>
+                  <div class="blog-title">
+                    <h2>JavaScript Fundamentals & Something</h2>
+                    <span class="subject">
+                      <i class="ri-hashtag"></i>javaScript
+                    </span>
+                    <span class="subject">
+                      <i class="ri-hashtag"></i>promise
+                    </span>
+                    <span class="subject">
+                      <i class="ri-hashtag"></i>datatype
+                    </span>
+                  </div>
+                  <div class="blog-detail">
+                    <p class="blog-time">
+                      <i class="ri-time-line"></i><sup> 3</sup>
+                    </p>
+                    <p class="bog-comment">
+                      <i class="ri-chat-3-line"></i><sup> 9</sup>
+                    </p>
+                  </div>
+                  <div class="blog-more">
+                    <p class="author-name">
+                      @michel_Scofil <i class="ri-checkbox-circle-line"></i>
+                    </p>
+                    <p class="blog-date">June 19, 2024</p>
+                  </div>
+                </div>
+              </div>
+              <div class="blog-item">
+                <div class="blog-img">
+                  <img src="https://picsum.photos/id/68/360/200" alt="" />
+                </div>
+                <div class="blog-info">
+                  <div class="blog-author">
+                    <img
+                      class="author-avatar"
+                      src="https://i.pravatar.cc/150?img=2"
+                      alt=""
+                    />
+                  </div>
+                  <div class="blog-title">
+                    <h2>Code quality</h2>
+                    <span class="subject">
+                      <i class="ri-hashtag"></i>javaScript
+                    </span>
+                    <span class="subject">
+                      <i class="ri-hashtag"></i>comments
+                    </span>
+                    <span class="subject">
+                      <i class="ri-hashtag"></i>debug
+                    </span>
+                  </div>
+                  <div class="blog-detail">
+                    <p class="blog-time">
+                      <i class="ri-time-line"></i><sup> 3</sup>
+                    </p>
+                    <p class="bog-comment">
+                      <i class="ri-chat-3-line"></i><sup> 9</sup>
+                    </p>
+                  </div>
+                  <div class="blog-more">
+                    <p class="author-name">
+                      @michel_Scofil <i class="ri-checkbox-circle-line"></i>
+                    </p>
+                    <p class="blog-date">June 19, 2024</p>
+                  </div>
+                </div>
+              </div>
+              <div class="blog-item">
+                <div class="blog-img">
+                  <img src="https://picsum.photos/id/55/360/200" alt="" />
+                </div>
+                <div class="blog-info">
+                  <div class="blog-author">
+                    <img
+                      class="author-avatar"
+                      src="https://i.pravatar.cc/150?img=4"
+                      alt=""
+                    />
+                  </div>
+                  <div class="blog-title">
+                    <h2>Objects: the basics</h2>
+                    <span class="subject">
+                      <i class="ri-hashtag"></i>javaScript
+                    </span>
+                    <span class="subject">
+                      <i class="ri-hashtag"></i>object
+                    </span>
+                    <span class="subject">
+                      <i class="ri-hashtag"></i>prototye
+                    </span>
+                  </div>
+                  <div class="blog-detail">
+                    <p class="blog-time">
+                      <i class="ri-time-line"></i><sup> 8</sup>
+                    </p>
+                    <p class="bog-comment">
+                      <i class="ri-chat-3-line"></i><sup> 44</sup>
+                    </p>
+                  </div>
+                  <div class="blog-more">
+                    <p class="author-name">
+                      @michel_Scofil <i class="ri-checkbox-circle-line"></i>
+                    </p>
+                    <p class="blog-date">June 19, 2024</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

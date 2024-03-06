@@ -21,7 +21,8 @@
   position: relative;
   gap: 4px;
   padding: 4px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   border-radius: 6px;
 }
 
@@ -34,7 +35,7 @@
   flex: 1;
   padding-left: 8px;
   font-size: 1.4rem;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   outline: none;
   border: none;
   border-bottom: 1px solid #e8ebed;
@@ -82,7 +83,7 @@
 
 .emojis .message {
   font-size: 1.4rem;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .emoji,
@@ -106,7 +107,7 @@
   background-color: transparent;
 }
 
-.emoji-item  .btn-emoji {
+.emoji-item .btn-emoji {
   width: 100%;
   background-color: transparent;
   border: none;
@@ -117,7 +118,7 @@
   cursor: pointer;
 }
 
-.emoji-item  .btn-emoji.active {
+.emoji-item .btn-emoji.active {
   background-color: white;
 }
 
@@ -129,4 +130,3 @@
 #nav-emoji .emoji-item:hover {
   background-color: #ddd;
 }
-

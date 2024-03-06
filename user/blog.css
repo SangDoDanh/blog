@@ -1,0 +1,153 @@
+.blog-host {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 12px 0;
+}
+.blog-tag {
+  width: 100%;
+  font-size: 2rem;
+}
+
+.blog-item {
+  background-color: #f0f0f0;
+  width: 360px;
+  position: relative;
+  border-radius: 6px;
+}
+
+.blog-img {
+  display: block;
+  width: 100%;
+  height: 200px;
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+}
+.blog-item.list .blog-img .blog-multi {
+  position: absolute;
+  color: #e8ebed;
+  background-color: #313130a6;
+  font-size: 1.6rem;
+  top: 4px;
+  right: 4px;
+  z-index: 99;
+  padding: 4px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.list-size {
+  font-size: 1rem;
+  margin-right: 2px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+}
+
+.blog-img::after {
+  content: "";
+  display: block;
+  background-color: #31313030;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.blog-info {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 8px;
+}
+.blog-title {
+  flex: 1;
+  overflow: hidden;
+}
+
+.blog-title h2 {
+  font-size: 1.6rem;
+  flex: 1;
+  padding: 0 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+  background-color: transparent;
+  margin-bottom: 6px;
+}
+
+.blog-title .subject {
+  color: #c06334;
+  font-size: 1.1rem;
+  font-weight: 400;
+  background-color: #f7797d31;
+  display: inline-block;
+  padding: 2px 4px;
+  border-radius: 2px;
+  margin-left: 4px;
+  height: 18px;
+}
+
+.subject:nth-child(3) {
+  color: #feb919;
+  background-color: #fbd88648;
+}
+
+.subject:nth-child(4) {
+  color: #198754;
+  background-color: #19875438;
+}
+
+.subject i {
+  margin-right: 2px;
+}
+.blog-detail {
+  width: 80px;
+  color: #716f6e;
+  font-size: 1.4rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  align-items: start;
+  gap: 12px;
+}
+
+.blog-more {
+  width: 100%;
+  font-size: 1.2rem;
+  color: #716f6e;
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 0 0 0;
+}
+
+.blog-author {
+  width: 50px;
+  font-size: 1.2rem;
+}
+.author-avatar {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  display: block;
+}
+
+.author-avatar img {
+  display: block;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.author-name {
+  color: #c06334;
+  font-size: 1.2rem;
+}
