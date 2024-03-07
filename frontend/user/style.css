@@ -310,12 +310,15 @@ main {
 .wraper-profile {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
   gap: 24px;
 }
 .user-profile {
   padding: 12px;
   border-radius: 8px;
   width: 70%;
+  display: flex;
+  align-items: flex-end;
 }
 
 .user-profile .heading {
@@ -326,6 +329,20 @@ main {
   flex-wrap: wrap;
   gap: 24px;
   justify-content: space-between;
+}
+
+.wraper-qrcode {
+}
+.qr-title {
+  font-size: 1.3rem;
+  color: #c06334;
+  margin-bottom: 8px;
+  text-align: center;
+}
+.img-qrcode {
+  display: block;
+  width: 120px;
+  height: 120px;
 }
 .fieldset {
   width: 100%;
@@ -391,6 +408,10 @@ main {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   padding: 12px;
+  flex-shrink: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .user-account .user-avatar {
@@ -423,6 +444,10 @@ main {
   font-family: "Courier New", Courier, monospace;
   gap: 24px;
 }
+.wrapper-user-info:last-child {
+  display: flex;
+  justify-content: flex-end;
+}
 
 .btn-follow {
   border: none;
@@ -446,4 +471,59 @@ main {
   position: absolute;
   width: calc(100% + 4px);
   height: calc(100% + 4px);
+}
+
+.user-account-soical {
+  font-size: 2rem;
+}
+
+.user-account-soical .logo-tw {
+  color: #1da1f2;
+}
+
+.user-account-soical .logo-yt {
+  color: #ea4335;
+}
+
+.user-account-soical .logo-yt span,
+.user-account-soical .logo-github span,
+.user-account-soical .logo-tw span {
+  font-size: 1.2rem;
+  color: #716f6e;
+}
+
+.user-account-hashtag,
+.user-account-soical {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+.user-account-hashtag .subject {
+  background-color: #c06334;
+  font-size: 1.2rem;
+  padding: 2px 8px;
+  border-radius: 1px;
+  font-family: "Courier New", Courier, monospace;
+  letter-spacing: 1px;
+}
+
+.user-account-hashtag .subject:nth-child(1) {
+  color: #c06334;
+  background-color: #f7797d31;
+}
+
+.user-account-hashtag .subject:nth-child(2) {
+  color: #feb919;
+  background-color: #fbd88648;
+}
+.user-account-hashtag .subject:nth-child(3) {
+  color: #198754;
+  background-color: #19875438;
+}
+
+/* wrapper-my-blog */
+.wrapper-my-blog {
+  margin: 0 auto;
 }

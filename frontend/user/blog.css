@@ -31,7 +31,6 @@
   font-size: 1.6rem;
   top: 4px;
   right: 4px;
-  z-index: 99;
   padding: 4px;
   width: 36px;
   height: 36px;
@@ -52,7 +51,7 @@
   height: 16px;
 }
 
-.blog-img::after {
+.blog-img::before {
   content: "";
   display: block;
   background-color: #31313030;
