@@ -17,6 +17,10 @@ app.use(cors());
 route(app);
 // Database connection
 connect(con);
+
+con.query("SELECT * FROM blog", (err, rows, fields) => {
+  console.log(rows[0]);
+});
 app.listen(port, () => {
   console.log(`App listening on port ${port}!`);
 });
