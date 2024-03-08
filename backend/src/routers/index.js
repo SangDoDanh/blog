@@ -2,6 +2,7 @@ const employeeRouter = require("./employee");
 const depRouter = require("./department");
 const uploadRouter = require("./upload");
 const authRouter = require("./auth");
+const blogRouter = require("./blog");
 /**
  * Config for the router
  * @author SangDD
@@ -9,6 +10,7 @@ const authRouter = require("./auth");
  */
 function route(app) {
   app.use("/api/departments", depRouter);
+  app.use("/api/blogs", blogRouter);
   app.use("/api/employees", employeeRouter);
   app.use("/upload", uploadRouter);
   app.use("/login", authRouter);

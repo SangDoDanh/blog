@@ -16,6 +16,23 @@
     <title>Viết Blog | Moki</title>
   </head>
   <body>
+    <form
+      style="padding: 24px"
+      id="form-upload-image"
+      action="http://localhost:3000/api/blogs/upload-image"
+      method="post"
+      enctype="multipart/form-data"
+    >
+      <input type="file" id="input-file" />
+      <input id="btn-upload-img" value="Upload image" type="submit" />
+      <!-- <iframe
+        name="hidden-iframe"
+        name="hidden-iframe"
+        src="#"
+        style="display: none"
+      ></iframe> -->
+    </form>
+
     <header>
       <div class="logo">
         <p class="wraper-icon"><i class="ri-quill-pen-line logo-icon"></i></p>
@@ -289,6 +306,7 @@
       </p>
     </footer>
 
+    <script src="./uploadfile.js"></script>
     <script type="module" src="./emoji.js"></script>
     <script src="./main.js"></script>
     <script type="module" src="./beta.js"></script>
